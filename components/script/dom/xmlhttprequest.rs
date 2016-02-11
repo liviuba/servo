@@ -777,7 +777,6 @@ impl XMLHttpRequestMethods for XMLHttpRequest {
                             Some(response) => Ok(Some(response)),
                             None => {
                                 let response = self.document_response();
-                                self.response_xml.set(response.r());
                                 Ok(response)
                             }
                         }
